@@ -1,4 +1,5 @@
 # Messenger
+Мессенджер с помощью Firebase
 ### Экран регистрации
 ![Screen registration](screens_for_readme/screen_registation.png)
 ### Экран авторизации
