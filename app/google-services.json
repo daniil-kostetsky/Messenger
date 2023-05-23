@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1076069588999",
+    "firebase_url": "https://messenger-c6192-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "messenger-c6192",
+    "storage_bucket": "messenger-c6192.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076069588999:android:71201d6169fbb451ed8aa2",
+        "android_client_info": {
+          "package_name": "com.example.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1076069588999-2i04okhm6qcb1e4lo92etb9qmrc7s7rb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAhdLir9JO-3BSKbPv9rzjgGpktFZo1n8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1076069588999-2i04okhm6qcb1e4lo92etb9qmrc7s7rb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

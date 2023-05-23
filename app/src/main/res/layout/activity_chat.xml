@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_users"
+    tools:context=".ChatActivity">
+
+    <TextView
+        android:id="@+id/textViewUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="James Dab" />
+
+    <ImageView
+        android:id="@+id/imageViewOnlineStatus"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/online_status"
+        app:layout_constraintBottom_toBottomOf="@id/textViewUserInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewUserInfo"
+        tools:background="@drawable/circle_red" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/editTextMessage"
+        app:layout_constraintTop_toBottomOf="@id/textViewUserInfo"
+        tools:listitem="@layout/other_message_item" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/message"
+        android:background="@color/white"
+        android:hint="@string/message"
+        android:inputType="textMultiLine"
+        android:maxHeight="200dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="48dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Text text text fffffffffffffffff text ext tfext text ext text text ext text text ext text text ext text text ext text text ext text text ext text text " />
+
+    <ImageView
+        android:id="@+id/imageViewSendMessage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/send_message"
+        app:layout_constraintBottom_toBottomOf="@id/editTextMessage"
+        app:layout_constraintEnd_toEndOf="@id/editTextMessage"
+        app:srcCompat="@android:drawable/ic_menu_send"
+        app:tint="@color/purple_500" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
